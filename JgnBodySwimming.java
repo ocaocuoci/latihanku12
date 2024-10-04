@@ -14,11 +14,11 @@ public class JgnBodySwimming{
         BMI = berat / tinggi;
 
         if ( BMI < 18.5){
-            System.out.print("Anda termasuk berbadan kurus");
+            System.out.print("hasil" +BMI+ " Anda termasuk berbadan kurus");
         } else if ( BMI >= 18.5 && BMI <= 25){
-            System.out.print("Anda termasuk berbadan langsing/sehat");
+            System.out.print("hasil" +BMI+ " Anda termasuk berbadan langsing/sehat");
         } else if (BMI >= 25){
-            System.out.print("Anda termasuk berbadan gemuk");
+            System.out.print("hasil" +BMI + " Anda termasuk berbadan gemuk");
         } else {
             System.out.print("tidak valid");
         }
