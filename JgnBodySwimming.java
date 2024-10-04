@@ -4,12 +4,12 @@ public class JgnBodySwimming{
         Scanner input12 = new Scanner(System.in);
 
         Double BMI;
-        int tinggi, berat;
+        Double tinggi, berat;
 
         System.out.print("Masukkan berat badan anda (kg) : ");
-        berat = input12.nextInt();
+        berat = input12.nextDouble();
         System.out.print("Masukkan tinggi badan anda (cm) : ");
-        tinggi = input12.nextInt();
+        tinggi = input12.nextDouble();
 
         BMI = berat / tinggi;
 
