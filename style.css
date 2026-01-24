@@ -1,0 +1,64 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BODY */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF6EC;
+    color: #6B4E4E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* HOMEPAGE */
+  .home {
+    text-align: center;
+    padding: 40px;
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  /* NAME */
+  .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #F4C2D7;
+    margin-bottom: 15px;
+  }
+  
+  /* TAGLINE */
+  .tagline {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* MENU */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: #6B4E4E;
+    padding: 12px;
+    border: 1px solid #F4C2D7;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #F4C2D7;
+    color: white;
+  }
