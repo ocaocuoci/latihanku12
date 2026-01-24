@@ -9,6 +9,11 @@
   body {
     font-family: 'Poppins', sans-serif;
     background-color: #FFF6EC;
+    background-image:
+      radial-gradient(#F4C2D7 1px, transparent 1px),
+      radial-gradient(#F4C2D7 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
     color: #6B4E4E;
     min-height: 100vh;
     display: flex;
@@ -18,6 +23,7 @@
   
   /* HOMEPAGE */
   .home {
+    position: relative;
     text-align: center;
     padding: 40px;
     background-color: #FAFAFA;
@@ -25,6 +31,22 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     max-width: 500px;
     width: 90%;
+  }
+  
+  /* Ribbon */
+  .home::before {
+    content: "my soft space";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F4C2D7;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   }
   
   /* NAME */
@@ -52,13 +74,77 @@
   .menu-item {
     text-decoration: none;
     color: #6B4E4E;
-    padding: 12px;
-    border: 1px solid #F4C2D7;
-    border-radius: 30px;
+    padding: 14px;
+    border-radius: 16px;
+    background-color: #FFF6EC;
+    border: 1px dashed #F4C2D7;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
   }
   
   .menu-item:hover {
     background-color: #F4C2D7;
     color: white;
+    transform: translateY(-2px);
+  }
+
+  .divider {
+    width: 60px;
+    height: 2px;
+    background-color: #F4C2D7;
+    margin: 20px auto 30px;
+    border-radius: 10px;
+  }
+
+
+/* DIARY PAGE */
+.diary {
+    background-color: #FAFAFA;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+  
+  /* TITLE */
+  .diary-title {
+    font-family: 'Playfair Display', serif;
+    color: #F4C2D7;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .diary-subtitle {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* ENTRY */
+  .diary-entry {
+    background-color: #FFF6EC;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border-left: 4px solid #F4C2D7;
+  }
+  
+  .diary-entry h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .diary-entry p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  
+  /* DATE */
+  .date {
+    font-size: 0.7rem;
+    color: #A88;
+    display: block;
+    margin-bottom: 6px;
   }
